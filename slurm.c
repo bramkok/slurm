@@ -1178,9 +1178,9 @@ void draw_face(int displaymode, char *hostname)
 	attrset(COLOR_PAIR(PAIR_TITLE) | 
 		((unsigned long)(t.title_attrib==COL_BOLD)?A_BOLD:A_NORMAL));
 	if (hostname[0] != '\0')
-    	center(00, "-= slurm %s on %s =-", VERSION, hostname);
+    	center(00, "", VERSION, hostname);
 	else
-		center(00, "-= slurm %s =-", VERSION);
+		center(00, "", VERSION);
 	attrset(COLOR_PAIR(PAIR_VAR) | 
 		((unsigned long)(t.var_attrib==COL_BOLD)?A_BOLD:A_NORMAL));
     if (displaymode == MODE_SPLIT)
